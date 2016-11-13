@@ -24,9 +24,9 @@ var aceTag = 'v1.2.3';
 +function updateCleanAndPutInOrder() {
 
   +function cloneFreshAndRemoveUnneeded() {
-    rm('-rf', buildroot)
-    exec('git clone git://github.com/ajaxorg/ace-builds.git ' + buildroot);
-    exec('(cd ' + buildroot + ' && git pull && git checkout ' + aceTag + ')');
+    // rm('-rf', buildroot)
+    // exec('git clone git://github.com/ajaxorg/ace-builds.git ' + buildroot);
+    // exec('(cd ' + buildroot + ' && git pull && git checkout ' + aceTag + ')');
 
     [ 'demo', 'kitchen-sink', 'src-min-noconflict', 'src-min', 'src', 'textarea' ]
       .forEach(function (dir) { rm('-rf', path.join(buildroot, dir)) })
